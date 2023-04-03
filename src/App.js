@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import  Menu  from "./pages/Menu";
 import Pagenotfound from "./pages/Pagenotfound";
 function App() {
+  console.log("nitin")
   return (
     <div>
      
