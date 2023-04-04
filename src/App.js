@@ -4,8 +4,8 @@ import About from "./pages/About";
 import Contact from "./pages/Contact";
 import  Menu  from "./pages/Menu";
 import Pagenotfound from "./pages/Pagenotfound";
+console.log("Hello")
 function App() {
-  console.log("nitin")
   return (
     <div>
      

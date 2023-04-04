@@ -11,6 +11,10 @@
      text-decoration: none;
      color: white;
 }
+.active{
+     color: pink !important;
+     font-weight: bold !important;
+}
 
 /* mobile view */
 .mobile-navigation{

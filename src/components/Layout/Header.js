@@ -1,8 +1,9 @@
 import React,{useState} from 'react'
 import { Box, AppBar, Typography, Toolbar, IconButton, Drawer, Divider} from '@mui/material'
+import Logo from '../../images/logo.svg'
 import FastfoodIcon from '@mui/icons-material/Fastfood';
 // import DoorFrontIcon from '@mui/icons-material/DoorFront';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import '../../styles/HeaderStyles.css'
 import MenuIcon from '@mui/icons-material/Menu';
 const Header = () => {
@@ -20,22 +21,23 @@ const Header = () => {
         component="div" 
         sx={{ flexGrow: 1, my:2 }}>
           {/* <DoorFrontIcon/> */}
-          <FastfoodIcon/>s
-            My Resturant
+          {/* <FastfoodIcon/>
+            My Resturant */}
+             <img src={Logo} alt="logo" height={"70"} width="250px" />
             </Typography>
               <Divider/>
                <ul className='mobile-navigation'>
                 <li>
-                   <Link to={'/'}>Home</Link>
+                   <NavLink activeClassName="active" to={'/'}>Home</NavLink>
                 </li>
                 <li>
-                   <Link to={'/menu'}>Menu</Link>
+                   <NavLink to={'/menu'}>Menu</NavLink>
                 </li>
                 <li>
-                   <Link to={'/about'}>About</Link>
+                   <NavLink to={'/about'}>About</NavLink>
                 </li>
                 <li>
-                   <Link to={'/contact'}>Contact</Link>
+                   <NavLink to={'/contact'}>Contact</NavLink>
                 </li>
                </ul>
            
@@ -58,22 +60,23 @@ const Header = () => {
           </IconButton>
            <Typography color={'greenyellow'} variant='h6' component="div" sx={{ flexGrow: 1 }}>
           {/* <DoorFrontIcon/> */}
-          <FastfoodIcon/>
-          My Resturant
+          {/* <FastfoodIcon/>
+          My Resturant */}
+          <img src={Logo} alt="logo" height={"70"} width="250px" />
             </Typography>
             <Box sx={{display: { xs: "none", sm: "block" } }}>
                <ul className='navigation-menu'>
                 <li>
-                   <Link to={'/'}>Home</Link>
+                   <NavLink activeClassName="active" to={'/'}>Home</NavLink>
                 </li>
                 <li>
-                   <Link to={'/menu'}>Menu</Link>
+                   <NavLink to={'/menu'}>Menu</NavLink>
                 </li>
                 <li>
-                   <Link to={'/about'}>About</Link>
+                   <NavLink to={'/about'}>About</NavLink>
                 </li>
                 <li>
-                   <Link to={'/contact'}>Contact</Link>
+                   <NavLink to={'/contact'}>Contact</NavLink>
                 </li>
                </ul>
             </Box>
